@@ -2111,5 +2111,9 @@ client.on("message", message => {
     }
 });
 
+client.on('ready', ready => {
+client.user.setGame(`-help|Elmwazen`,`https://twitch.tv/ichbinxirdx`)
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
